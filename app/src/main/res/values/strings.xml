@@ -2,4 +2,19 @@
     <string name="app_name">Movie Info</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--Generic text-->
+    <string name="invalid_email_text">Email inválido</string>
+    <string name="invalid_password_text">La contraseña es requerida</string>
+    <string name="btnAceptar">Aceptar</string>
+    <string name="btnCancelar">Cancelar</string>
+    <string name="main_title">Peliculas</string>
+    <!--Login Fragment-->
+    <string name="email_hint">Email*</string>
+    <string name="password_hint">Contraseña*</string>
+    <string name="btn_login_title">Ingresar</string>
+    <string name="login_error_message">Usuario o contraseña incorrecta, verifique los datos</string>
+
+    <!--Main activity -->
+    <string name="logout_title">Salir</string>
+    <string name="logout_message">¿Desea cerrar sesión?</string>
 </resources>

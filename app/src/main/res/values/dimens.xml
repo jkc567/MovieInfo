@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="view_left_padding">40dp</dimen>
+    <dimen name="view_right_padding">40dp</dimen>
+    <dimen name="textsize.Large">24sp</dimen>
+    <dimen name="margin_controls_small">10dp</dimen>
+</resources>

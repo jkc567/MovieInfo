@@ -10,17 +10,24 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MovieInfo"
-        tools:targetApi="31">
-        <activity
-            android:name=".view.MainActivity"
-            android:exported="true">
+        android:theme="@style/Theme.MovieInfo">
+        <activity android:name=".view.activities.SplashActivity"
+            android:clearTaskOnLaunch="true"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            </intent-filter></activity>
+        <activity
+            android:name=".view.activities.MainActivity"
+            android:screenOrientation="portrait">
         </activity>
+        <activity android:name=".view.activities.LoginActivity"
+            android:screenOrientation="portrait"/>
+
     </application>
 
 </manifest>
