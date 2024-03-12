@@ -1,12 +1,10 @@
 package com.dev.movieinfo.viewmodel
 
 import android.util.Log
-import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
-import com.dev.movieinfo.model.repository.LoginRepositoryImpl
+import com.dev.movieinfo.model.repository.login.LoginRepositoryImpl
 import com.dev.movieinfo.utils.EmailUtils
-import com.google.firebase.auth.FirebaseAuth
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
@@ -15,7 +13,7 @@ class LoginViewModel:BaseViewModel() {
     val isValidPassword=MutableLiveData<Boolean>()
     val email=MutableLiveData("")
     val password=MutableLiveData("")
-    val loginRepository=LoginRepositoryImpl()
+    private val loginRepository= LoginRepositoryImpl()
     fun validateData():Boolean
     {
         isValidEmail.value=email.value!!.trim().isNotEmpty() && EmailUtils.isValidEmail(email.value!!)

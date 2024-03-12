@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentManager
 import com.dev.movieinfo.R
 import com.dev.movieinfo.databinding.ActivityMainBinding
-import com.dev.movieinfo.view.fragments.MainFragment
+import com.dev.movieinfo.view.fragments.MoviesFragment
 import com.dev.movieinfo.viewmodel.MainViewModel
 
 class MainActivity : BaseActivity() {
@@ -35,19 +35,26 @@ class MainActivity : BaseActivity() {
         {
             logOut()
         }
+        if (item.itemId == android.R.id.home) {
+            supportFragmentManager.popBackStackImmediate()
+            supportActionBar!!.setDisplayHomeAsUpEnabled(false)
+            return true
+        }
+
         return super.onOptionsItemSelected(item)
     }
     fun initUI()
     {
-        setSupportActionBar(binding.toolbar)
         binding.toolbar.setTitle(getString(R.string.main_title))
+        setSupportActionBar(binding.toolbar)
+
         loadMainFragment()
     }
     fun loadMainFragment()
     {
         val fragmentManager=supportFragmentManager
         val fragmenTransaction=fragmentManager.beginTransaction()
-        val mainFragment=MainFragment.newInstance()
+        val mainFragment=MoviesFragment.newInstance()
         fragmenTransaction.replace(R.id.fl_main_layout,mainFragment)
         fragmentManager.popBackStackImmediate(null,FragmentManager.POP_BACK_STACK_INCLUSIVE)
         fragmenTransaction.commit()

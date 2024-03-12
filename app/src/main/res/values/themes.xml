@@ -5,6 +5,7 @@
         <item name="colorSecondary">@color/secondaryColor</item>
         <item name="materialButtonStyle">@style/PrimaryButton</item>
         <item name="android:statusBarColor">@color/secondaryColorDark</item>
+        <item name="colorControlNormal">@color/secondaryColor</item>
     </style>
     <style name="Theme.MovieInfo" parent="Base.Theme.MovieInfo" />
     <style name="PrimaryButton" parent="Widget.Material3.Button">
@@ -18,5 +19,12 @@
     <style name="Splash" parent="Theme.SplashScreen">
         <item name="windowSplashScreenBackground">@color/colorPrimary</item>
         <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
+    </style>
+    <style name="SelectableItemTheme">
+        <item name="colorControlHighlight">@color/rippleColor</item>
+    </style>
+    <style name="SelectableItemBackground">
+        <item name="android:theme">@style/SelectableItemTheme</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
     </style>
 </resources>

@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Movie Info</string>
+    <string name="base_image_path">https://image.tmdb.org/t/p/w500</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <!--Generic text-->
@@ -17,4 +18,16 @@
     <!--Main activity -->
     <string name="logout_title">Salir</string>
     <string name="logout_message">¿Desea cerrar sesión?</string>
+    <string name="welcome_message">Bienvenido</string>
+
+    <!--Movies Fragment -->
+    <string name="votes_average">Calificación:</string>
+    
+    <!--Detail Fragment-->
+    <string name="release_date_title">Fecha estreno:</string>
+    <string name="runtime_title">Duración:</string>
+    <string name="classification_title">Clasificación: </string>
+    <string name="only_adult_text">Solo adultos</string>
+    <string name="all_family_title">Toda la familia</string>
+    <string name="genres_title">Género(s):</string>
 </resources>

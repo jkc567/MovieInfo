@@ -4,4 +4,10 @@
     <dimen name="view_right_padding">40dp</dimen>
     <dimen name="textsize.Large">24sp</dimen>
     <dimen name="margin_controls_small">10dp</dimen>
+    <dimen name="margin_card_sides">5dp</dimen>
+    <dimen name="image_height">100dp</dimen>
+    <dimen name="image_width">70dp</dimen>
+    <dimen name="textsize.Medium">18sp</dimen>
+    <dimen name="textsize.XLarge">32sp</dimen>
+    <dimen name="margin_controls_xsmall">5dp</dimen>
 </resources>

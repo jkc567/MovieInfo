@@ -7,4 +7,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="ripple">#80ffffff</color>
     <color name="errorColor">#B00020</color>
+    <color name="lineColor">#e4e8e9</color>
+    <color name="rippleColor">#80ffab00</color>
 </resources>

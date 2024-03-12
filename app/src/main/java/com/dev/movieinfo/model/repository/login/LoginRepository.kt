@@ -1,4 +1,4 @@
-package com.dev.movieinfo.model.repository
+package com.dev.movieinfo.model.repository.login
 
 import com.google.firebase.auth.AuthResult
 

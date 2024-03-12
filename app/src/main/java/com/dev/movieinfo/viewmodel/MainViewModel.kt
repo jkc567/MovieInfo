@@ -1,7 +1,6 @@
 package com.dev.movieinfo.viewmodel
 
-import androidx.lifecycle.MutableLiveData
-import com.dev.movieinfo.model.repository.LoginRepositoryImpl
+import com.dev.movieinfo.model.repository.login.LoginRepositoryImpl
 
 class MainViewModel:BaseViewModel() {
     val loginRepository= LoginRepositoryImpl()

@@ -13,7 +13,14 @@ open class BaseActivity:AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         onBackPressedDispatcher.addCallback(this, object :OnBackPressedCallback(true){
             override fun handleOnBackPressed() {
-                moveTaskToBack(true)
+                if(supportFragmentManager.backStackEntryCount>0)
+                {
+                    supportFragmentManager.popBackStack()
+                    supportActionBar!!.setDisplayHomeAsUpEnabled(false)
+                }
+                else {
+                    moveTaskToBack(true)
+                }
             }
 
         })
